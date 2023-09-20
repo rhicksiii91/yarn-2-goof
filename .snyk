@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.25.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:ejs:20161128':
@@ -56,3 +56,18 @@ patch:
   'npm:tunnel-agent:20170305':
     - tap > codecov.io > request > tunnel-agent:
         patched: '2020-01-07T11:41:08.913Z'
+  SNYK-JS-LODASH-567746:
+    - tap > nyc > istanbul-lib-instrument > @babel/generator > lodash:
+        patched: '2023-09-20T23:10:36.291Z'
+        id: SNYK-JS-LODASH-567746
+        path: tap > nyc > istanbul-lib-instrument > @babel/generator > lodash
+    - tap > nyc > istanbul-lib-instrument > @babel/traverse > lodash:
+        patched: '2023-09-20T23:10:36.291Z'
+        id: SNYK-JS-LODASH-567746
+        path: tap > nyc > istanbul-lib-instrument > @babel/traverse > lodash
+    - tap > nyc > istanbul-lib-instrument > @babel/generator > @babel/types > lodash:
+        patched: '2023-09-20T23:10:36.291Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          tap > nyc > istanbul-lib-instrument > @babel/generator > @babel/types
+          > lodash
